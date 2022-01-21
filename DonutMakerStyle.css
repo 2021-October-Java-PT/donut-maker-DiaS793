@@ -1,0 +1,264 @@
+/* @font-face
+{
+    font-family: "Simpsonfont";
+
+    src: url("css/SimpsonfontDEMO.otf")
+    src:url("css/SimpsonfontDEMO.woff") format("woff"),
+    url("css/SimpsonfontDEMO.otf") format("opentype"),
+    url("css/SimpsonfontDEMO.svg#filename") format("svg");
+} */
+
+#background {
+  background-image: url(images\the-simpsons.jpg);
+  object-fit: cover;
+  /* background-repeat: no-repeat; */
+}
+
+#donutCounter {
+  padding: 5px;
+  width: 150px;
+  display: flex;
+  position: relative;
+  margin-left: 15.4rem;
+  object-fit: cover;
+}
+
+#donut {
+  font-size: ;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 2.1rem;
+}
+
+#donutCount {
+  position: relative;
+  margin-bottom: 1px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+
+  list-style-type: none;
+  /* margin: 10rem; */
+
+  padding: 3px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
+li {
+  float: left;
+  margin: 0.5rem;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(234, 26, 144);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  box-shadow: 0px 8px 8px 0px;
+  z-index: 1;
+  margin-right: 30rem;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16 px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 0rem;
+}
+
+.dropdown-content2 {
+  display: none;
+  background-color: black;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  box-shadow: 0px 8px 8px 0px;
+  z-index: 1;
+  margin-right: 30rem;
+}
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16 px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-right: 0rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+
+  position: relative;
+  bottom: 50%;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+#about {
+  margin: 4rem;
+}
+
+#about,
+h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  margin-left: 30rem;
+  margin-right: 30rem;
+  margin-bottom: -5rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 1.5rem;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 6rem;
+  margin-left: 17rem;
+  margin-right: 17rem;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+#autoClicker {
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
+#donutMultiClicker {
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
+#resetDonutMaker {
+  margin-top: 2rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+
+#logo {
+  position: relative;
+  margin-left: 37rem;
+  padding-bottom: -4rem;
+}
+#aboutTheGame,
+h3 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+  margin-bottom: -5rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 1.5re;
+}
+
+#howToPlay {
+  font-size: 20px;
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+#donutMaker,
+h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  margin-left: 30rem;
+  margin-right: 30rem;
+  /* margin-bottom: 0rem; */
+  padding: 0.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 1.5rem;
+}
+
+#theGame {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  font-size: -2rem;
+
+  margin: 4rem;
+
+  padding-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: none;
+
+  /* width: 70%; */
+  margin-left: 30%;
+  margin-right: 30%;
+
+  text-align: center;
+  border-radius: 3rem;
+
+  position: relative;
+
+  bottom: -1000%;
+}
+
+#donutCount {
+  font-size: 20px;
+}
+
+#autoClickerCount {
+  font-size: 20px;
+}
+
+#donutMultiCount {
+  font-size: 20px;
+}
