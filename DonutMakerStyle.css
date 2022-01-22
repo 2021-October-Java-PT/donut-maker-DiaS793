@@ -1,22 +1,17 @@
-/* @font-face
-{
-    font-family: "Simpsonfont";
 
-    src: url("css/SimpsonfontDEMO.otf")
-    src:url("css/SimpsonfontDEMO.woff") format("woff"),
-    url("css/SimpsonfontDEMO.otf") format("opentype"),
-    url("css/SimpsonfontDEMO.svg#filename") format("svg");
-} */
+*{
+  font-family: sans-serif;
+}
 
 #background {
   background-image: url(images\the-simpsons.jpg);
   object-fit: cover;
-  /* background-repeat: no-repeat; */
+
 }
 
 #donutCounter {
   padding: 5px;
-  width: 150px;
+  max-width: 150px;
   display: flex;
   position: relative;
   margin-left: 15.4rem;
@@ -173,17 +168,28 @@ article {
 #autoClicker {
   margin-left: 14rem;
   margin-right: 14rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border:none;
+
 }
 
 #donutMultiClicker {
   margin-left: 14rem;
   margin-right: 14rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border:none;
 }
 
 #resetDonutMaker {
   margin-top: 2rem;
   margin-left: 14rem;
   margin-right: 14rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border:none;
+
 }
 
 #logo {
@@ -200,7 +206,7 @@ h3 {
   border-radius: 3rem;
   text-align: center;
   font-size: 25px;
-  border-radius: 1.5re;
+  border-radius: 1.5rem;
 }
 
 #howToPlay {
@@ -216,7 +222,6 @@ h3 {
 
   margin-left: 30rem;
   margin-right: 30rem;
-  /* margin-bottom: 0rem; */
   padding: 0.5rem;
   border-radius: 3rem;
   text-align: center;
@@ -238,8 +243,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   gap: none;
-
-  /* width: 70%; */
   margin-left: 30%;
   margin-right: 30%;
 
@@ -261,4 +264,47 @@ h3 {
 
 #donutMultiCount {
   font-size: 20px;
+}
+
+#myBtn{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top:0;
+  width:40%;
+  height: 50%;
+  border-radius: 3rem;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 0px;
+  width: 88%;
+  color: white;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size:28px;
+  font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
