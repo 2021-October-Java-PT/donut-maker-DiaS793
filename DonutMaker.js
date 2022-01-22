@@ -9,74 +9,67 @@ class DonutMaker {
 
   addDonut() {
     this.donutCount += 1;
-
-    
-    // console.log(this.donutCount)
   }
 
   getDonutCount() {
     return this.donutCount;
   }
 
-
-
-  getAutoClickerCount(){
+  getAutoClickerCount() {
     return this.autoClickerCount;
   }
 
-  getAutoClickerPrice(){
+  getAutoClickerPrice() {
     return this.autoClickerPrice;
   }
 
-  getDonutMultiCount(){
+  getDonutMultiCount() {
     return this.donutMultiCount;
   }
 
-  getDonutMultiPrice(){
+  getDonutMultiPrice() {
     return this.donutMultiPrice;
   }
 
-
   buyAutoClicker() {
     if (this.donutCount >= this.autoClickerPrice) {
-      this.donutCount -= this.autoClickerPrice
+      this.donutCount -= this.autoClickerPrice;
       this.autoClickerCount += 1;
       let price = 0.1 * this.autoClickerPrice;
       this.autoClickerPrice += price;
-      console.log(this.autoClickerCount)
-    } 
+      console.log(this.autoClickerCount);
+    }
     if (this.autoClickerCount >= 1) {
-      setInterval(()=>{
+      setInterval(() => {
         console.log(this.donutCount);
-        this.donutCount+=this.autoClickerCount; 
+        this.donutCount += this.autoClickerCount;
         const count = document.querySelector('#donutCount');
         count.innerText = this.donutCount;
-      },1000)
+      }, 1000);
     }
   }
 
   buyDonutMultiClicker() {
     if (this.donutCount >= this.donutMultiPrice) {
-        this.donutCount -= this.donutMultiPrice;
-        this.donutMultiCount += 1;
-        let price = 0.1 * this.donutMultiPrice;
-        this.donutMultiPrice += price;
+      this.donutCount -= this.donutMultiPrice;
+      this.donutMultiCount += 1;
+      let price = 0.1 * this.donutMultiPrice;
+      this.donutMultiPrice += price;
+      this.donutCount += Math.pow(1.2, 1);
+      this.donutCount += this.donutMultiCount;
+      const donutMulti = document.querySelector('#donutCount');
+      donutMulti.innerText = this.donutCount;
+      if (this.autoClickerCount >= 1) {
         this.donutCount += Math.pow(1.2, 1);
-        this.donutCount+=this.donutMultiCount;
-        const donutMulti = document.querySelector('#donutCount')
-        donutMulti.innerText = this.donutCount;
-        if(this.autoClickerCount >=1){
-        this.donutCount += Math.pow(1.2, 1)
-        this.autoClickerCount+= this.donutMultiCount;
-        const multiAuto = document.querySelector('#donutCount')
+        this.autoClickerCount += this.donutMultiCount;
+        const multiAuto = document.querySelector('#donutCount');
         multiAuto.innerText = autoClickerCount;
-        }
       }
-    } 
-  
+    }
+  }
 
-  resetGame(){
-    location.reload()
+  resetGame() {
+    location.reload();
   }
 }
 
